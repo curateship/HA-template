@@ -1,0 +1,92 @@
+@use '../base' as *;
+
+/* -------------------------------- 
+
+File#: _1_vertical-steps
+Title: Vertical Steps
+Descr: Vertical, multi-step navigation
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+:root {
+  --v-steps-gap: var(--space-lg); /* gap between two steps */
+
+  --v-steps-vertical-line-width: 4px; /* width of the line between markers */
+
+  --v-steps-marker-size: 24px; /* circle size */
+  --v-steps-marker-icon-size: 12px; /* check icon size */
+  --v-steps-marker-margin-right: 10px; /* margin right */
+
+  --v-steps-title-line-height: 1.2; /* step title line-height */
+}
+
+.v-steps {}
+
+.v-steps__item:not(:last-child) {
+  position: relative;
+  padding-bottom: var(--v-steps-gap);
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--v-steps-marker-size) / 2 - var(--v-steps-vertical-line-width) / 2);
+    top: calc(var(--v-steps-marker-size) / 2);
+    width: var(--v-steps-vertical-line-width);
+    height: 100%;
+    background: var(--color-contrast-lower);
+  }
+
+  &.v-steps__item--completed::before {
+    background: var(--color-primary);
+  }
+}
+
+.v-steps__header {
+  display: flex;
+}
+
+.v-steps__marker {
+  position: relative;
+  z-index: 1;
+  
+  display: flex;
+  width: var(--v-steps-marker-size);
+  height: var(--v-steps-marker-size);
+  border-radius: 50%;
+  background-color: var(--color-bg);
+  box-shadow: inset 0 0 0 var(--v-steps-vertical-line-width) var(--color-contrast-lower), 0 0 0 2px var(--color-bg);
+  margin-right: var(--v-steps-marker-margin-right);
+  flex-shrink: 0;
+
+  .icon {
+    margin: auto;
+    font-size: var(--v-steps-marker-icon-size); 
+    color: var(--color-white); /* icon color */
+
+    display: none;
+  }
+
+  .v-steps__item--completed &, .v-steps__item--current & {
+    background-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-bg);
+
+    .icon {
+      display: block;
+    }
+  }
+}
+
+.v-steps__title {
+  position: relative;
+  top: calc((var(--v-steps-marker-size) - 1em * var(--v-steps-title-line-height)) / 2);
+  line-height: var(--v-steps-title-line-height);
+
+  font-weight: 600;
+  color: var(--color-contrast-higher);
+}
+
+.v-steps__body {
+  padding-left: calc(var(--v-steps-marker-size) + var(--v-steps-marker-margin-right));
+  margin-top: var(--space-xxxs);
+}

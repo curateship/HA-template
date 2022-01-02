@@ -1,0 +1,40 @@
+@use '../base' as *;
+
+/* -------------------------------- 
+
+File#: _1_alert-card
+Title: Alert Card
+Descr: Alert card for app UI
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.alert-card {
+  position: relative;
+  z-index: 1;
+}
+
+.alert-card__close-btn {
+  --size: 32px;
+  height: var(--size);
+  width: var(--size);
+
+  position: absolute;
+  z-index: 1;
+  top: var(--space-sm);
+  right: var(--space-sm);
+
+  display: flex;
+  border-radius: 50%;
+
+  transition: .2s;
+
+  .icon {
+    margin: auto;
+    display: block;
+  }
+
+  &:hover {
+    background-color: alpha(var(--color-contrast-higher), 0.1);
+  }
+}

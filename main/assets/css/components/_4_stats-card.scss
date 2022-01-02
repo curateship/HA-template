@@ -1,0 +1,18 @@
+@use '../base' as *;
+@use '_2_chart.scss' as *;
+@use '_3_area-chart.scss' as *;
+
+/* -------------------------------- 
+
+File#: _4_stats-card
+Title: Statistics Card
+Descr: Statistics card for app UI
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.stats-card {
+  .chart--area {
+    --chart-height: 120px;
+  }
+}
