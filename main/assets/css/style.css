@@ -25061,7 +25061,6 @@ Usage: codyhouse.co/license
 
 .f-header__item {
   flex-shrink: 0;
-  border-bottom: 1px solid var(--color-contrast-lower);
 }
 
 .f-header__dropdown-icon {
