@@ -13936,42 +13936,42 @@ html:not(.js) .no-js\:is-hidden {
     --color-error-lighter-h: 342;
     --color-error-lighter-s: 92%;
     --color-error-lighter-l: 65%;
-    --color-bg-darker: hsl(204, 4%, 10%);
-    --color-bg-darker-h: 204;
-    --color-bg-darker-s: 4%;
-    --color-bg-darker-l: 10%;
-    --color-bg-dark: hsl(216, 5%, 13%);
-    --color-bg-dark-h: 216;
-    --color-bg-dark-s: 5%;
-    --color-bg-dark-l: 13%;
-    --color-bg: hsl(204, 6%, 17%);
-    --color-bg-h: 204;
-    --color-bg-s: 6%;
-    --color-bg-l: 17%;
-    --color-bg-light: hsl(216, 5%, 21%);
-    --color-bg-light-h: 216;
-    --color-bg-light-s: 5%;
-    --color-bg-light-l: 21%;
-    --color-bg-lighter: hsl(204, 4%, 24%);
-    --color-bg-lighter-h: 204;
-    --color-bg-lighter-s: 4%;
-    --color-bg-lighter-l: 24%;
-    --color-contrast-lower: hsl(204, 4%, 28%);
-    --color-contrast-lower-h: 204;
-    --color-contrast-lower-s: 4%;
-    --color-contrast-lower-l: 28%;
-    --color-contrast-low: hsl(216, 2%, 43%);
-    --color-contrast-low-h: 216;
-    --color-contrast-low-s: 2%;
-    --color-contrast-low-l: 43%;
-    --color-contrast-medium: hsl(220, 3%, 58%);
-    --color-contrast-medium-h: 220;
-    --color-contrast-medium-s: 3%;
-    --color-contrast-medium-l: 58%;
-    --color-contrast-high: hsl(228, 6%, 83%);
-    --color-contrast-high-h: 228;
-    --color-contrast-high-s: 6%;
-    --color-contrast-high-l: 83%;
+    --color-bg-darker: hsl(0, 0%, 16%);
+    --color-bg-darker-h: 0;
+    --color-bg-darker-s: 0%;
+    --color-bg-darker-l: 16%;
+    --color-bg-dark: hsl(0, 0%, 19%);
+    --color-bg-dark-h: 0;
+    --color-bg-dark-s: 0%;
+    --color-bg-dark-l: 19%;
+    --color-bg: hsl(0, 0%, 23%);
+    --color-bg-h: 0;
+    --color-bg-s: 0%;
+    --color-bg-l: 23%;
+    --color-bg-light: hsl(0, 0%, 27%);
+    --color-bg-light-h: 0;
+    --color-bg-light-s: 0%;
+    --color-bg-light-l: 27%;
+    --color-bg-lighter: hsl(0, 0%, 30%);
+    --color-bg-lighter-h: 0;
+    --color-bg-lighter-s: 0%;
+    --color-bg-lighter-l: 30%;
+    --color-contrast-lower: hsl(240, 1%, 33%);
+    --color-contrast-lower-h: 240;
+    --color-contrast-lower-s: 1%;
+    --color-contrast-lower-l: 33%;
+    --color-contrast-low: hsl(240, 1%, 47%);
+    --color-contrast-low-h: 240;
+    --color-contrast-low-s: 1%;
+    --color-contrast-low-l: 47%;
+    --color-contrast-medium: hsl(240, 2%, 62%);
+    --color-contrast-medium-h: 240;
+    --color-contrast-medium-s: 2%;
+    --color-contrast-medium-l: 62%;
+    --color-contrast-high: hsl(240, 5%, 84%);
+    --color-contrast-high-h: 240;
+    --color-contrast-high-s: 5%;
+    --color-contrast-high-l: 84%;
     --color-contrast-higher: hsl(240, 100%, 99%);
     --color-contrast-higher-h: 240;
     --color-contrast-higher-s: 100%;
@@ -14030,6 +14030,16 @@ html:not(.js) .no-js\:is-hidden {
 }
 .link-subtle:hover {
   color: var(--color-primary);
+}
+
+.int-table {
+  overflow: hidden;
+  border-bottom: 0px var(--color-contrast-low);
+}
+
+.int-table__header .int-table__cell {
+  background-color: var(--color-bg);
+  box-shadow: 0 0px 0 var(--color-contrast-lower);
 }
 
 :root {
@@ -42895,7 +42905,7 @@ Usage: codyhouse.co/license
 -------------------------------- */
 .int-table {
   overflow: hidden;
-  border-bottom: 2px solid var(--color-contrast-lower);
+  border-bottom: 0px solid var(--color-contrast-lower);
 }
 
 .int-table__inner {
@@ -42923,11 +42933,11 @@ Usage: codyhouse.co/license
 
 .int-table__header .int-table__cell {
   background-color: var(--color-bg);
-  box-shadow: 0 2px 0 var(--color-contrast-lower);
+  box-shadow: 0 0px 0 var(--color-contrast-lower);
 }
 
 .int-table__body .int-table__row {
-  border-bottom: 1px solid var(--color-contrast-lower);
+  border-bottom: 0px solid var(--color-contrast-lower);
 }
 .int-table__body .int-table__row:last-child {
   border-bottom: none;
