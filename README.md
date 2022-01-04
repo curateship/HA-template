@@ -1,4 +1,4 @@
-# 🐞 Gulp starter template for CodyFrame
+# 🐞 Installation
 
 To start your web project, run the following two commands:
 1. Install the node modules.
