@@ -9,7 +9,7 @@
 </head>
 <body data-theme="dark">
 
-<!-- Navigation -->
+<!-- 👇 Navigation Wrapper-->
 <header class="f-header js-f-header hide-nav hide-nav--fixed js-hide-nav js-hide-nav--main" data-nav-target-class="f-header--expanded">
     <div class="f-header__mobile-content container max-width-lg">
       <a href="/index.html" class="f-header__logo">
@@ -20,7 +20,7 @@
         </svg>
       </a>
 
-<!-- 👇 icon buttons --mobile -->
+<!-- icon buttons --mobile -->
 <div class="mega-nav__icon-btns mega-nav__icon-btns--mobile">
   <div class="mega-nav__icon-btns mega-nav__icon-btns--mobile"></div>
     <button class="reset mega-nav__icon-btn mega-nav__icon-btn--search js-tab-focus" aria-label="Toggle search" aria-controls="mega-nav-search">
@@ -55,7 +55,7 @@
 </div>
 <!-- END -->
 
-<!-- 👇 Navigation --Desktop -->
+<!-- Navigation --Desktop -->
       <button class="reset anim-menu-btn js-anim-menu-btn f-header__nav-control js-tab-focus" aria-label="Toggle menu">
         <i class="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden="true"></i>
       </button>
@@ -100,17 +100,10 @@
           <li class="f-header__item"><a href="#0" class="f-header__btn btn btn--primary">Button</a></li>
         </ul>
   </header>
-<!-- END -->
+<!-- END Navigation Wrapper -->
 
-<!-- diagonal hero -->
-<section class="bg-contrast-high bg-opacity-80%" style="background-image: url('assets/img/hero-diagonal-img-1.jpg');" data-theme="dark">
-  <div class="container max-width-adaptive-sm padding-y-xl">
-  </div>
-</section>
-<!-- END -->
-
-<!-- Content Body -->
-<section class="padding-y-lg">
+<!-- 👇 Content Body Wrapper-->
+<section class="padding-y-xxl">
   <div class="container max-width-adaptive-lg">
     <div class="grid gap-md">
 
@@ -119,6 +112,7 @@
           <div class="background-bg shadow-md border radius-md">
             <div class="int-table-actions padding-bottom-xxxs" data-table-controls="table-1">
 
+              <!-- Title Dropdown-->
               <div class="controlbar--sticky flex justify-between">
                 <div class="margin-xxs">
                   <div class="inline-flex items-baseline">
@@ -136,12 +130,12 @@
                     </div>
                   </div>
                 </div>
-              
+                <!-- END Control Bar-->
+
                 <!-- Menu Bar -->
                 <div class="flex flex-wrap items-center justify-between margin-right-xxs">
                   <div class="flex flex-wrap">
                       
-              
                     <div class="menu-bar__item js-menu-bar" aria-controls="modal-add-article">
                     <svg class="icon menu-bar__icon" aria-hidden="true" viewBox="0 0 20 20">
                       <path d="M18.85 4.39l-3.32-3.32a0.83 0.83 0 0 0-1.18 0l-11.62 11.62a0.84 0.84 0 0 0-0.2 0.33l-1.66 4.98a0.83 0.83 0 0 0 0.79 1.09 0.84 0.84 0 0 0 0.26-0.04l4.98-1.66a0.84 0.84 0 0 0 0.33-0.2l11.62-11.62a0.83 0.83 0 0 0 0-1.18z m-6.54 1.08l1.17-1.18 2.15 2.15-1.18 1.17z"></path>
@@ -193,12 +187,13 @@
                             <circle cx="14.5" cy="7.5" r="1.5" /></svg>
                         </li>
                         <li class="menu-bar__item" role="menuitem">
-                        <svg class="icon menu-bar__icon" viewBox="0 0 20 20">
+                        <svg class="icon menu-bar__icon" viewBox="0 0 16 16">
                           <path d="M2.49 6.64v10.79a2.49 2.49 0 0 0 2.49 2.49h9.96a2.49 2.49 0 0 0 2.49-2.49v-10.79z m4.98 9.13h-1.66v-5.81h1.66z m3.32 0h-1.66v-5.81h1.66z m3.32 0h-1.66v-5.81h1.66z"></path><path d="M19.09 3.32h-4.98v-2.49a0.83 0.83 0 0 0-0.83-0.83h-6.64a0.83 0.83 0 0 0-0.83 0.83v2.49h-4.98a0.83 0.83 0 0 0 0 1.66h18.26a0.83 0.83 0 0 0 0-1.66z m-11.62-1.66h4.98v1.66h-4.98z"></path></svg>
                           <span class="menu-bar__label">Delete</span>
                           <span class="counter counter--critical counter--docked"><span id="deleteBadge">1</span> <i class="sr-only">Notifications</i></span>
                         </li>
                       </menu>
+
                     </div> <!-- end of <div class="int-table-actions" data-table-controls="table-1"> -->
                   </div>
                 </div> <!-- end of <div class="flex flex-wrap items-center justify-between margin-right-xxs"> -->
@@ -206,8 +201,8 @@
               <!-- END Control Bar-->
 
             <div class="margin-top-auto border-top border-contrast-lower"></div><!-- Divider -->
-            <!-- Table-->
 
+            <!-- Table-->
             <div class="padding-sm">
               <div id="table-1" class="int-table text-sm js-int-table">
                 <div class="int-table__inner">
@@ -383,19 +378,18 @@
                 </li>
               </menu>
               </div>
-
             <!-- END Table-->
 
           </div>
         </div>
       </div>
- <!-- END content table-->
+<!-- END Content Body Wrapper -->
 
- <!-- Sidebar -->
- <div class="col-3@md">
-    <div class="background-bg shadow-md border radius-md position-fixed position-sticky top-0@xs">
-      <nav class="sidenav padding-y-sm js-sidenav">
-         <div class="sidenav__label margin-bottom-xxxs">
+<!-- 👇 Sidebar Wrapper-->
+<div class="col-3@md">
+    <div class="background-bg shadow-md border radius-md position-fixed position-sticky top-0@xs padding-bottom-sm">
+      <nav class="sidenav js-sidenav">
+         <div class="sidenav__label margin-bottom-xs">
              </div>
                 <ul class="sidenav__list">
                   <li class="sidenav__item">
@@ -483,9 +477,9 @@
     </div>
   </div>
 </section>
-<!-- END -->
+<!-- END Sidebar Column-->
 
-<!-- Footer -->
+<!-- 👇 Footer Wrapper -->
 <footer class="footer-v4 padding-y-lg">
   <div class="container max-width-lg">
     <nav class="footer-v4__nav">
@@ -526,9 +520,9 @@
     </div>
   </div>
 </footer>
-<!-- END -->
+<!-- END Footer Wrapper -->
 
-  </div>
+</div>
 <script src="assets/js/scripts.js"></script>
 </body>
 </html>
