@@ -14032,16 +14032,6 @@ html:not(.js) .no-js\:is-hidden {
   color: var(--color-primary);
 }
 
-.int-table {
-  overflow: hidden;
-  border-bottom: 0px var(--color-contrast-low);
-}
-
-.int-table__header .int-table__cell {
-  background-color: var(--color-bg);
-  box-shadow: 0 0px 0 var(--color-contrast-lower);
-}
-
 :root {
   --font-primary: Inter, system-ui, sans-serif;
   --text-base-size: 1em;
